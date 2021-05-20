@@ -5,16 +5,22 @@ return{ type : ActionTypes.SET_PRODUCT,
     payload : products
 }
 };
-export const SelectProducts=(product)=>{
+
+export const SelectProducts=(products)=>{
     return { type : ActionTypes.SELECTED_SET_PRODUCT,
-        payload :  product
+        payload :  products
     }
     };
-
-    export const RemoveSelectProducts=(removeproduct)=>{
-        return{ type : ActionTypes.REMOVED_SELECTED_SET_PRODUCT,
-            payload :  removeproduct
+export const RemoveSelectProducts=()=>{
+        return { type : ActionTypes.REMOVED_SELECTED_SET_PRODUCT,
+            
         }
         };
+
+//     export const RemoveSelectProducts=(removeproduct)=>{
+//         return{ type : ActionTypes.REMOVED_SELECTED_SET_PRODUCT,
+//             payload :  removeproduct
+//         }
+//         };
 
       
